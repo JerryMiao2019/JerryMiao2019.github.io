@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:JerryMiao2019/JerryMiao2019.github.io.git
+  branch: master
