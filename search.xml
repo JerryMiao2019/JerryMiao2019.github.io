@@ -41,24 +41,24 @@
       </tags>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/2021/09/25/tags/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <title>Hello World</title>
+    <url>/2021/04/09/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="美好的故事开始了"><a href="#美好的故事开始了" class="headerlink" title="美好的故事开始了"></a>美好的故事开始了</h1><h4 id="我又给自己挖了一个大坑"><a href="#我又给自己挖了一个大坑" class="headerlink" title="我又给自己挖了一个大坑"></a>我又给自己挖了一个大坑</h4><h4 id="愿世界一切都好！"><a href="#愿世界一切都好！" class="headerlink" title="愿世界一切都好！"></a>愿世界一切都好！</h4>]]></content>
   </entry>
   <entry>
     <title>music</title>
     <url>/2021/10/04/music/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-FotDwWzV" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-sfYaYnwE" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="5097737" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/09/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="美好的故事开始了"><a href="#美好的故事开始了" class="headerlink" title="美好的故事开始了"></a>美好的故事开始了</h1><h4 id="我又给自己挖了一个大坑"><a href="#我又给自己挖了一个大坑" class="headerlink" title="我又给自己挖了一个大坑"></a>我又给自己挖了一个大坑</h4><h4 id="愿世界一切都好！"><a href="#愿世界一切都好！" class="headerlink" title="愿世界一切都好！"></a>愿世界一切都好！</h4>]]></content>
+    <title>tags</title>
+    <url>/2021/09/25/tags/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
     <title>关于足球</title>
@@ -71,6 +71,63 @@
       <tags>
         <tag>足球</tag>
         <tag>随机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一章：开始学习C++</title>
+    <url>/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
+<p><strong>编辑器为 JetBrains 赞助的 CLion</strong></p>
+<h3 id="1）进入C"><a href="#1）进入C" class="headerlink" title="1）进入C++"></a>1）进入C++</h3><p>​    这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
+<p>你会看到一些<code>//</code>打头的文字，不必担心，这并不是一些高深的语法，这只是注释而已，编译器将自动跳过，就像<code>Python</code>中的<code>#</code>。</p>
+<p><strong>C++对大小写敏感，所以，并不能将 <code>cout</code> 写成<code>Cout</code> 或 <code>COUT</code>，程序将无法通过编译，</strong></p>
+<p><strong>并且会指出使用了未知的标识符，所像<code>kout</code>和<code>cont</code>都是不可取的。</strong></p>
+<p>文件扩展名<code>cpp</code>是一种常用的扩展名，可能会使用其他扩展参见附录一。</p>
+<h5 id="例1-1："><a href="#例1-1：" class="headerlink" title="例1.1："></a>例1.1：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; myfirst.cpp -- display a message</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;                                 &#x2F;&#x2F; a PREPROCESSOR directive</span><br><span class="line">int main()                                          &#x2F;&#x2F; function header</span><br><span class="line">&#123;                                                   &#x2F;&#x2F; start of function body</span><br><span class="line">    using namespace std;                            &#x2F;&#x2F; make definitions visible</span><br><span class="line">    cout &lt;&lt; &quot;Hello World Guys!&quot;;                    &#x2F;&#x2F; message</span><br><span class="line">    cout &lt;&lt; endl;                                   &#x2F;&#x2F; start a new line.</span><br><span class="line">    cout &lt;&lt; &quot;This is my first program!&quot; &lt;&lt; endl;    &#x2F;&#x2F; more output</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+<h3 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h3><h4 id="1）"><a href="#1）" class="headerlink" title="1）"></a>1）</h4><table>
+<thead>
+<tr>
+<th align="center">C++实现</th>
+<th align="center">源代码文件的扩展名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UNIX</td>
+<td align="center">C、cc、cxx、c</td>
+</tr>
+<tr>
+<td align="center">GUN C++</td>
+<td align="center">C、cc、cxx、cpp、c++</td>
+</tr>
+<tr>
+<td align="center">Digital Mars</td>
+<td align="center">cpp、cxx</td>
+</tr>
+<tr>
+<td align="center">Borland C++</td>
+<td align="center">cpp</td>
+</tr>
+<tr>
+<td align="center">Watecom</td>
+<td align="center">cpp</td>
+</tr>
+<tr>
+<td align="center">Microsoft Visual C++</td>
+<td align="center">cpp、cxx、cc</td>
+</tr>
+<tr>
+<td align="center">Freestyle Code Warrior</td>
+<td align="center">cp、cpp、cc、cxx、C++</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -297,63 +354,6 @@
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> carrots;</span><br></pre></td></tr></table></figure>
 
 <p>这句代码将创建一个类型为int的变量。也就是说carrots可以储存整数可以按特定的方法使用，比如说加或减。现在来看cout，它是一个ostream类对象。ostream类定义(iostream文件的另一个成员)</p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一章：开始学习C++</title>
-    <url>/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
-<p><strong>编辑器为 JetBrains 赞助的 CLion</strong></p>
-<h3 id="1）进入C"><a href="#1）进入C" class="headerlink" title="1）进入C++"></a>1）进入C++</h3><p>​    这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
-<p>你会看到一些<code>//</code>打头的文字，不必担心，这并不是一些高深的语法，这只是注释而已，编译器将自动跳过，就像<code>Python</code>中的<code>#</code>。</p>
-<p><strong>C++对大小写敏感，所以，并不能将 <code>cout</code> 写成<code>Cout</code> 或 <code>COUT</code>，程序将无法通过编译，</strong></p>
-<p><strong>并且会指出使用了未知的标识符，所像<code>kout</code>和<code>cont</code>都是不可取的。</strong></p>
-<p>文件扩展名<code>cpp</code>是一种常用的扩展名，可能会使用其他扩展参见附录一。</p>
-<h5 id="例1-1："><a href="#例1-1：" class="headerlink" title="例1.1："></a>例1.1：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; myfirst.cpp -- display a message</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;                                 &#x2F;&#x2F; a PREPROCESSOR directive</span><br><span class="line">int main()                                          &#x2F;&#x2F; function header</span><br><span class="line">&#123;                                                   &#x2F;&#x2F; start of function body</span><br><span class="line">    using namespace std;                            &#x2F;&#x2F; make definitions visible</span><br><span class="line">    cout &lt;&lt; &quot;Hello World Guys!&quot;;                    &#x2F;&#x2F; message</span><br><span class="line">    cout &lt;&lt; endl;                                   &#x2F;&#x2F; start a new line.</span><br><span class="line">    cout &lt;&lt; &quot;This is my first program!&quot; &lt;&lt; endl;    &#x2F;&#x2F; more output</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-<h3 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h3><h4 id="1）"><a href="#1）" class="headerlink" title="1）"></a>1）</h4><table>
-<thead>
-<tr>
-<th align="center">C++实现</th>
-<th align="center">源代码文件的扩展名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UNIX</td>
-<td align="center">C、cc、cxx、c</td>
-</tr>
-<tr>
-<td align="center">GUN C++</td>
-<td align="center">C、cc、cxx、cpp、c++</td>
-</tr>
-<tr>
-<td align="center">Digital Mars</td>
-<td align="center">cpp、cxx</td>
-</tr>
-<tr>
-<td align="center">Borland C++</td>
-<td align="center">cpp</td>
-</tr>
-<tr>
-<td align="center">Watecom</td>
-<td align="center">cpp</td>
-</tr>
-<tr>
-<td align="center">Microsoft Visual C++</td>
-<td align="center">cpp、cxx、cc</td>
-</tr>
-<tr>
-<td align="center">Freestyle Code Warrior</td>
-<td align="center">cp、cpp、cc、cxx、C++</td>
-</tr>
-</tbody></table>
 ]]></content>
       <categories>
         <category>C++</category>
