@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/04/09/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="美好的故事开始了"><a href="#美好的故事开始了" class="headerlink" title="美好的故事开始了"></a>美好的故事开始了</h1><h4 id="我又给自己挖了一个大坑"><a href="#我又给自己挖了一个大坑" class="headerlink" title="我又给自己挖了一个大坑"></a>我又给自己挖了一个大坑</h4><h4 id="愿世界一切都好！"><a href="#愿世界一切都好！" class="headerlink" title="愿世界一切都好！"></a>愿世界一切都好！</h4>]]></content>
+  </entry>
+  <entry>
     <title>Ultraman</title>
     <url>/2021/05/01/Ultraman/</url>
-    <content><![CDATA[<p>​    刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。 </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>​    刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。 </p>
 <p>​    一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。 </p>
 <p>​    又有一天，我们学校要组织表演，班长就命令我们:抬锣! 说完他变成了光。 又又有一天，我在哼歌:爱地魔力转圈圈…… 同桌:啥？爱迪？ 说完他变成了光。 ……</p>
 <p>by <strong>地球仪太平洋公共广告栏</strong></p>
@@ -41,19 +46,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/09/hello-world/</url>
-    <content><![CDATA[<h1 id="美好的故事开始了"><a href="#美好的故事开始了" class="headerlink" title="美好的故事开始了"></a>美好的故事开始了</h1><h4 id="我又给自己挖了一个大坑"><a href="#我又给自己挖了一个大坑" class="headerlink" title="我又给自己挖了一个大坑"></a>我又给自己挖了一个大坑</h4><h4 id="愿世界一切都好！"><a href="#愿世界一切都好！" class="headerlink" title="愿世界一切都好！"></a>愿世界一切都好！</h4>]]></content>
-  </entry>
-  <entry>
     <title>tags</title>
     <url>/2021/09/25/tags/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
   <entry>
     <title>关于足球</title>
     <url>/2021/09/25/%E5%85%B3%E4%BA%8E%E8%B6%B3%E7%90%83/</url>
-    <content><![CDATA[<p>老婆：这哪队踢哪队？ 老公：法国踢尼日利亚。 老婆：这是中超联赛么？ 老公：…世界杯。 老婆：中国队在哪？ 老公：…跟你一样在看电视。 老婆：为什么不上去踢？ 老公：国际足联不让。 老婆：是因为钓鱼岛么？ 老公：…因为水平不行。 老婆：不是有姚明吗？ 老公：…这是我的卡，你去逛淘宝吧…</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>老婆：这哪队踢哪队？ 老公：法国踢尼日利亚。 老婆：这是中超联赛么？ 老公：…世界杯。 老婆：中国队在哪？ 老公：…跟你一样在看电视。 老婆：为什么不上去踢？ 老公：国际足联不让。 老婆：是因为钓鱼岛么？ 老公：…因为水平不行。 老婆：不是有姚明吗？ 老公：…这是我的卡，你去逛淘宝吧…</p>
 ]]></content>
       <categories>
         <category>杂记</category>
@@ -66,7 +66,7 @@
   <entry>
     <title>第一章：开始学习C++</title>
     <url>/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/</url>
-    <content><![CDATA[<h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
 <p><strong>编辑器为 JetBrains 赞助的 CLion</strong></p>
 <h3 id="1）进入C"><a href="#1）进入C" class="headerlink" title="1）进入C++"></a>1）进入C++</h3><p>​    这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
 <p>你会看到一些<code>//</code>打头的文字，不必担心，这并不是一些高深的语法，这只是注释而已，编译器将自动跳过，就像<code>Python</code>中的<code>#</code>。</p>
@@ -123,7 +123,7 @@
   <entry>
     <title>第二章：进入C++</title>
     <url>/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/</url>
-    <content><![CDATA[<h1 id="第二章：进入-C"><a href="#第二章：进入-C" class="headerlink" title="第二章：进入 C++"></a>第二章：进入 C++</h1><h2 id="内容包括："><a href="#内容包括：" class="headerlink" title="内容包括："></a>内容包括：</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第二章：进入-C"><a href="#第二章：进入-C" class="headerlink" title="第二章：进入 C++"></a>第二章：进入 C++</h1><h2 id="内容包括："><a href="#内容包括：" class="headerlink" title="内容包括："></a>内容包括：</h2><ul>
 <li>C++ 程序的一般格式；</li>
 <li><code>#include </code>  指令；</li>
 <li><code>main() </code>  函数；</li>
@@ -355,7 +355,7 @@
   <entry>
     <title>基于Github.io+Hexo搭建个人博客</title>
     <url>/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>这篇文章是我搭建Blog的启蒙文章，我 <a href="https://jerrymiao2019.github.io/">https://jerrymiao2019.github.io</a> 的Blog就是基于此搭建的。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这篇文章是我搭建Blog的启蒙文章，我 <a href="https://jerrymiao2019.github.io/">https://jerrymiao2019.github.io</a> 的Blog就是基于此搭建的。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备条件"><a href="#准备条件" class="headerlink" title="准备条件"></a>准备条件</h2><p>在这里先跟大家说一些准备条件，有些同学可能一听到搭建博客就望而却步。弄个博客网站，不得有台服务器吗？不得搞数据库吗？不得注册域名吗？没事，如果都没有，那照样是能搭建一个博客的。</p>
 <p>GitHub 是个好东西啊，它提供了 GitHub Pages 帮助我们来架设一个静态网站，这就解决了服务器的问题。</p>
 <p>Hexo 这个博客框架没有那么重量级，它是 MarkDown 直接写文章的，然后 Hexo 可以直接将文章编译成静态网页文件并发布，所以这样文章的内容、标题、标签等信息就没必要存数据库里面了，是直接纯静态页面了，这就解决了数据库的问题。</p>
