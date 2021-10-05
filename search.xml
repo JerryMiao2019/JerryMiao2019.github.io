@@ -5,6 +5,8 @@
     <url>/2021/05/01/Ultraman/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>​    刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。 </p>
 <p>​    一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。 </p>
+<span id="more"></span>
+
 <p>​    又有一天，我们学校要组织表演，班长就命令我们:抬锣! 说完他变成了光。 又又有一天，我在哼歌:爱地魔力转圈圈…… 同桌:啥？爱迪？ 说完他变成了光。 ……</p>
 <p>by <strong>地球仪太平洋公共广告栏</strong></p>
 <p>​    那一年，迪迦倒在了大海里，失去了最后的希望那里充满了黑暗，我哭着拿起了家里的手电筒照向了电视机。</p>
@@ -49,21 +51,19 @@
     <title>music</title>
     <url>/2021/10/04/music/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-sfYaYnwE" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-SgFFltpu" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="5097737" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
 ]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/2021/09/25/tags/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
-  </entry>
-  <entry>
     <title>关于足球</title>
     <url>/2021/09/25/%E5%85%B3%E4%BA%8E%E8%B6%B3%E7%90%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>老婆：这哪队踢哪队？ 老公：法国踢尼日利亚。 老婆：这是中超联赛么？ 老公：…世界杯。 老婆：中国队在哪？ 老公：…跟你一样在看电视。 老婆：为什么不上去踢？ 老公：国际足联不让。 老婆：是因为钓鱼岛么？ 老公：…因为水平不行。 老婆：不是有姚明吗？ 老公：…这是我的卡，你去逛淘宝吧…</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>老婆：这哪队踢哪队？ </p>
+<span id="more"></span>
+
+<p>老公：法国踢尼日利亚。 老婆：这是中超联赛么？ 老公：…世界杯。 老婆：中国队在哪？ 老公：…跟你一样在看电视。 老婆：为什么不上去踢？ 老公：国际足联不让。 老婆：是因为钓鱼岛么？ 老公：…因为水平不行。 老婆：不是有姚明吗？ 老公：…这是我的卡，你去逛淘宝吧…</p>
 ]]></content>
       <categories>
         <category>杂记</category>
@@ -74,10 +74,19 @@
       </tags>
   </entry>
   <entry>
+    <title>tags</title>
+    <url>/2021/09/25/tags/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
     <title>第一章：开始学习C++</title>
     <url>/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
 <p><strong>编辑器为 JetBrains 赞助的 CLion</strong></p>
+<span id="more"></span>
+
+
+
 <h3 id="1）进入C"><a href="#1）进入C" class="headerlink" title="1）进入C++"></a>1）进入C++</h3><p>​    这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
 <p>你会看到一些<code>//</code>打头的文字，不必担心，这并不是一些高深的语法，这只是注释而已，编译器将自动跳过，就像<code>Python</code>中的<code>#</code>。</p>
 <p><strong>C++对大小写敏感，所以，并不能将 <code>cout</code> 写成<code>Cout</code> 或 <code>COUT</code>，程序将无法通过编译，</strong></p>
@@ -144,6 +153,10 @@
 <li>使用<code>cin</code>对象进行输入；</li>
 <li>定义和使用简单函数。</li>
 </ul>
+<span id="more"></span>
+
+
+
 <h2 id="2-1-进入-C"><a href="#2-1-进入-C" class="headerlink" title="2.1 进入 C++"></a>2.1 进入 C++</h2><p><strong>C++对大小写敏感，对拼写也是敏感的，所以不能使用如<code>COUT</code>和<code>Kout</code>等单词</strong></p>
 <p>*<code>cpp</code>*是一种表示 C++ 程序的方式</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// myfirst.cpp -- display a message</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>                      <span class="comment">// a PREPROCESSOR directive</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>                          <span class="comment">// function header</span></span></span><br><span class="line"><span class="function"></span>&#123;                                <span class="comment">// start of function body</span></span><br><span class="line">   <span class="keyword">using</span> <span class="keyword">namespace</span> std;               <span class="comment">// make definitions visible</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>; <span class="comment">// message</span></span><br><span class="line">   cout &lt;&lt; endl;                    <span class="comment">// start a new line.</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;You won&#x27;t regret it!&quot;</span> &lt;&lt; endl;    <span class="comment">// more output</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -366,6 +379,8 @@
     <title>基于Github.io+Hexo搭建个人博客</title>
     <url>/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这篇文章是我搭建Blog的启蒙文章，我 <a href="https://jerrymiao2019.github.io/">https://jerrymiao2019.github.io</a> 的Blog就是基于此搭建的。</p>
+<span id="more"></span>
+
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备条件"><a href="#准备条件" class="headerlink" title="准备条件"></a>准备条件</h2><p>在这里先跟大家说一些准备条件，有些同学可能一听到搭建博客就望而却步。弄个博客网站，不得有台服务器吗？不得搞数据库吗？不得注册域名吗？没事，如果都没有，那照样是能搭建一个博客的。</p>
 <p>GitHub 是个好东西啊，它提供了 GitHub Pages 帮助我们来架设一个静态网站，这就解决了服务器的问题。</p>
 <p>Hexo 这个博客框架没有那么重量级，它是 MarkDown 直接写文章的，然后 Hexo 可以直接将文章编译成静态网页文件并发布，所以这样文章的内容、标题、标签等信息就没必要存数据库里面了，是直接纯静态页面了，这就解决了数据库的问题。</p>
