@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-01-01T06:32:17.074Z</updated>
+  <updated>2022-12-30T07:02:55.690Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>讲耳朵唤醒</title>
+    <link href="http://example.com/2022/12/30/%E5%B0%86%E8%80%B3%E6%9C%B5%E5%94%A4%E9%86%92/"/>
+    <id>http://example.com/2022/12/30/%E5%B0%86%E8%80%B3%E6%9C%B5%E5%94%A4%E9%86%92/</id>
+    <published>2022-12-30T07:02:55.000Z</published>
+    <updated>2022-12-30T07:02:55.690Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记那个盛夏</title>
+    <link href="http://example.com/2022/12/30/%E8%AE%B0%E9%82%A3%E4%B8%AA%E7%9B%9B%E5%A4%8F/"/>
+    <id>http://example.com/2022/12/30/%E8%AE%B0%E9%82%A3%E4%B8%AA%E7%9B%9B%E5%A4%8F/</id>
+    <published>2022-12-30T06:55:20.000Z</published>
+    <updated>2022-12-30T07:01:57.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="记录" scheme="http://example.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="随笔" scheme="http://example.com/categories/%E8%AE%B0%E5%BD%95/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="记录" scheme="http://example.com/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="时光" scheme="http://example.com/tags/%E6%97%B6%E5%85%89/"/>
+    
+  </entry>
   
   <entry>
     <title>再见 CentOS！</title>
@@ -49,7 +99,7 @@
     <updated>2022-02-27T14:01:02.826Z</updated>
     
     
-    <summary type="html">&lt;p&gt;此文章就记录一下我在文章中添加音乐的艰辛历程&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;此文章就记录一下我在文章中添加音乐的艰辛历程&lt;/p&gt;</summary>
     
     
     
@@ -66,10 +116,12 @@
     <updated>2021-10-05T09:58:02.730Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;第二章：进入-C&quot;&gt;&lt;a href=&quot;#第二章：进入-C&quot; class=&quot;headerlink&quot; title=&quot;第二章：进入 C++&quot;&gt;&lt;/a&gt;第二章：进入 C++&lt;/h1&gt;&lt;h2 id=&quot;内容包括：&quot;&gt;&lt;a href=&quot;#内容包括：&quot; class=&quot;headerlink&quot; title=&quot;内容包括：&quot;&gt;&lt;/a&gt;内容包括：&lt;/h2&gt;&lt;ul&gt;
+    <summary type="html">&lt;h1&gt;第二章：进入 C++&lt;/h1&gt;
+&lt;h2 id=&quot;内容包括：&quot;&gt;内容包括：&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;C++ 程序的一般格式；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;#include&lt;/code&gt;  指令；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;main()&lt;/code&gt;  函数；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#include &lt;/code&gt;  指令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main() &lt;/code&gt;  函数；&lt;/li&gt;
 &lt;li&gt;使用&lt;code&gt;cout&lt;/code&gt;对象进行输出；&lt;/li&gt;
 &lt;li&gt;在C++程序中加入注释；&lt;/li&gt;
 &lt;li&gt;何时以及如何使用&lt;code&gt;endl&lt;/code&gt;；&lt;/li&gt;
@@ -95,7 +147,8 @@
     <updated>2021-10-05T09:58:12.552Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;开始学习C&quot;&gt;&lt;a href=&quot;#开始学习C&quot; class=&quot;headerlink&quot; title=&quot;开始学习C++&quot;&gt;&lt;/a&gt;开始学习C++&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1&gt;开始学习C++&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;编辑器为 JetBrains 赞助的 CLion&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
@@ -159,8 +212,8 @@
     <updated>2021-10-05T09:57:49.515Z</updated>
     
     
-    <summary type="html">&lt;p&gt;​    刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。 &lt;/p&gt;
-&lt;p&gt;​    一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。 &lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;​	刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。&lt;/p&gt;
+&lt;p&gt;​	一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。&lt;/p&gt;</summary>
     
     
     
@@ -176,7 +229,7 @@
     <link href="http://example.com/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-04-10T05:54:03.000Z</published>
-    <updated>2021-10-05T09:58:35.146Z</updated>
+    <updated>2022-12-30T07:01:57.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;这篇文章是我搭建Blog的启蒙文章，我 &lt;a href=&quot;https://jerrymiao2019.github.io&quot;&gt;https://jerrymiao2019.github.io&lt;/a&gt; 的Blog就是基于此搭建的。&lt;/p&gt;</summary>
