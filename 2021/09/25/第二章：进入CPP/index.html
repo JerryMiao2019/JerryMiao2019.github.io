@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="第二章：进入 C++ 内容包括：  C++ 程序的一般格式； #include   指令； main()   函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二章：进入C++">
+<meta property="og:url" content="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/index.html">
+<meta property="og:site_name" content="JerryMiao2019 的个人 Blog">
+<meta property="og:description" content="第二章：进入 C++ 内容包括：  C++ 程序的一般格式； #include   指令； main()   函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-09-25T13:52:31.000Z">
+<meta property="article:modified_time" content="2021-10-05T09:58:02.730Z">
+<meta property="article:author" content="JerryMiao2019">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>第二章：进入C++ | JerryMiao2019 的个人 Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="JerryMiao2019 的个人 Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JerryMiao2019 的个人 Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">知否？ 饭否？</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">10</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a>
+
+  </li>
+        <li class="menu-item menu-item-playlist">
+
+    <a href="/playlist/" rel="section"><i class="fa fa-compact-disc fa-fw"></i>歌单</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/JerryMiao2019" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JerryMiao2019">
+      <meta itemprop="description" content="涉猎Python;C++">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JerryMiao2019 的个人 Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第二章：进入C++
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-25 21:52:31" itemprop="dateCreated datePublished" datetime="2021-09-25T21:52:31+08:00">2021-09-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-05 17:58:02" itemprop="dateModified" datetime="2021-10-05T17:58:02+08:00">2021-10-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>10 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1>第二章：进入 C++</h1>
+<h2 id="内容包括：">内容包括：</h2>
+<ul>
+<li>C++ 程序的一般格式；</li>
+<li><code>#include </code>  指令；</li>
+<li><code>main() </code>  函数；</li>
+<li>使用<code>cout</code>对象进行输出；</li>
+<li>在C++程序中加入注释；</li>
+<li>何时以及如何使用<code>endl</code>；</li>
+<li>声明和使用变量；</li>
+<li>使用<code>cin</code>对象进行输入；</li>
+<li>定义和使用简单函数。</li>
+</ul>
+<span id="more"></span>
+<h2 id="2-1-进入-C">2.1 进入 C++</h2>
+<p><strong>C++对大小写敏感，对拼写也是敏感的，所以不能使用如<code>COUT</code>和<code>Kout</code>等单词</strong></p>
+<p>*<code>cpp</code>*是一种表示 C++ 程序的方式</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// myfirst.cpp -- display a message</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>                      <span class="comment">// a PREPROCESSOR directive</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>                          <span class="comment">// function header</span></span></span><br><span class="line"><span class="function"></span>&#123;                                <span class="comment">// start of function body</span></span><br><span class="line">   <span class="keyword">using</span> <span class="keyword">namespace</span> std;               <span class="comment">// make definitions visible</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>; <span class="comment">// message</span></span><br><span class="line">   cout &lt;&lt; endl;                    <span class="comment">// start a new line.</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;You won&#x27;t regret it!&quot;</span> &lt;&lt; endl;    <span class="comment">// more output</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-1-1-main-函数">2.1.1 main() 函数</h3>
+<pre><code>去掉修饰后，程序 2.1 的基本结构会是这样
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	statements;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>这几行表明有一个 main 函数，并描述了该函数的行为。
+</code></pre>
+<p>这几行代码构成了<strong>函数定义（function definition）</strong>。</p>
+<pre><code>该定义有两部分组成：
+</code></pre>
+<ol>
+<li>第一行  <code>int main()</code>  叫<strong>函数头</strong>。</li>
+<li>花括号（<strong>{和}</strong>）中包括的部分叫做函数体。</li>
+</ol>
+<p><strong>函数体是指出函数因该做什么的计算机指令、在C++中，每一条完整的指令都被称为语句，语句以<code>;</code>结尾。</strong></p>
+<p><code>main()</code>中最后一条语句为<strong>结束语句（return statements）</strong>，它用来结束函数。</p>
+<h4 id="语句和分号">语句和分号</h4>
+<pre><code>语句是要执行的操作，C++ 和 C 不像 Python 或 Pascal 一样使用回车做语句的结尾，终止符是一个分号，它是语句结束的标记，
+</code></pre>
+<p>是语句的组成部分，而不是语句之间的标记。结论是<strong>在 C++ 中不能省略分号。</strong></p>
+<h5 id="1-作为接口的函数头">1.作为接口的函数头</h5>
+<pre><code>	下面的函数头表明`main()`函数可以调用他的函数返回一个整数值，
+</code></pre>
+<p>且不从调用他的函数那里获得任何东西：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<pre><code>	有很多现有的程序使用经典的C语言函数头：
+</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br></pre></td></tr></table></figure>
+<pre><code>	在C语言中，省略返回类型则默认为 int ，当然可以使用下列变体：
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br></pre></td></tr></table></figure>
+<pre><code>	括号中的`void`指出函数不接受任何的参数，在C++中，让括号空着等效于在括号中使用`void`
+
+	当然也可以使用下面的函数头，并省略返回语句：
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<pre><code>	如果不在`main()`函数后增加返回语句，编译器将默认为：
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<pre><code>	**这条隐式语句只适用于*`main()`函数***
+</code></pre>
+<h5 id="2-为什么-main-不能使用其他名称">2. 为什么 <code>main()</code>不能使用其他名称</h5>
+<pre><code>	是因为必须这么做，通常C++程序必须包含一个`main()`函数（不是`Main()`、`MAIN()`或`mane()`）
+
+	存在一些列外情况，比如在Windows编程中可以编写一个动态链接库（DLL）模块，
+
+这是其他Windows程序可以使用的代码。由于DLL不是独立的程序，所以不需要`main()`，
+
+亦或是一些框架程序或机器人中的控制芯片。
+</code></pre>
+<h3 id="2-1-2-C-注释">2.1.2  C++ 注释</h3>
+<pre><code>C++注释以`//`打头，使用时编译器会自动跳过，它可以位于新的一行，也可以和代码在同一行。
+</code></pre>
+<p>C++也能识别C语言注释 C 注释包括在 <code>/*</code> 和 <code>*/</code> 之间，由于它以<code>*/</code>结尾，所以可以跨越多行。</p>
+<h3 id="2-1-3-C-预处理器和-iostream-文件">2.1.3  C++预处理器和 iostream 文件</h3>
+<pre><code>如果要是程序能够进行输入和输出，则会使用如下代码：
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+<pre><code>当然可以使用其他代码替换掉第二行，第一行的`#include &lt;iostream&gt;`编译指令使预处理器将`iostream`文件的添加到程序中。
+</code></pre>
+<p>这是一种典型的预处理器做法：在源代码被编译之前，替换或添加文本。</p>
+<pre><code>这提出了一个问题，为什么要将`iostream`文件的内容添加到程序中呢？
+</code></pre>
+<p>答案涉及到程序与外部的通信。<code>iostream</code>中的<code>io</code>是指输入（进入程序的信息）和输出（从程序中发出的信息）。C++的输入和输出方案涉及<code>iostream</code> 文件中的多个定义。为了使用<code>cout</code>来显示消息，第一个程序需要这些定义。为了使用<code>cout </code>来显示消息，第一个程序需要这些定义。</p>
+<p>#include编译指令导致<code>iostream</code>文件的内容随源代码的内容一起被发送给编译器。实际上，<code>iostream</code> 文件的内容将会取代程序中的代码行</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>原始文件没有被修改，而是将源代码文件和<code>iostream</code>组成一个复合文件，编译的下一阶段将要使用到该文件。</p>
+<p><strong>注意：使用<code>cin</code>和<code>cout</code>进行输入和输出的程序时必须包含文件<code>iostream</code>。</strong></p>
+<h3 id="2-1-4-头文件名">2.1.4  头文件名</h3>
+<pre><code>想`iostream`这样的文件叫做包含文件（include file)——由于他们被包含在其他文件中；也叫做头文件（head file）——
+</code></pre>
+<p>由于它们是被包含在文件的起始处。C++编译器自带了许多头文件，每个头文件都支持一组特定的工具。C语言的传统是，头文件</p>
+<p>使用扩展名 h，将其作为一种通用名称标识文件类型的基本方式</p>
+<p>列如，头文件<code>math.h</code>支持c语言的数学运算函数，但是C++的用法变了。</p>
+<p>现在，C++对老式的C语言扩展头<code>.h</code>做了保留，而C++则没有扩展名。</p>
+<p>有些C头文件被转换成C++的头文件，并在文件名的最前面加上<code>c</code>来表明他原来是C的头文件，如<code>cmath</code></p>
+<p>总而言之</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">头文件类型</th>
+<th style="text-align:center">约定</th>
+<th style="text-align:center">示例</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">C++旧式风格</td>
+<td style="text-align:center">以<code>.h</code>结尾</td>
+<td style="text-align:center"><strong>iostream</strong></td>
+<td style="text-align:center">C++</td>
+</tr>
+<tr>
+<td style="text-align:left">C旧式风格</td>
+<td style="text-align:center">以<code>.h</code>结尾</td>
+<td style="text-align:center"><strong>math.h</strong></td>
+<td style="text-align:center">C、C++</td>
+</tr>
+<tr>
+<td style="text-align:left">C++新式风格</td>
+<td style="text-align:center">没有扩展名</td>
+<td style="text-align:center"><strong>iostream</strong></td>
+<td style="text-align:center">C++（使用 namespace std）</td>
+</tr>
+<tr>
+<td style="text-align:left">转换后的C</td>
+<td style="text-align:center">加上前缀C，没有扩展名</td>
+<td style="text-align:center"><strong>cmath</strong></td>
+<td style="text-align:center">C++(可以使用不是C的特性)</td>
+</tr>
+</tbody>
+</table>
+<pre><code>由于C使用不同的扩展名表示不同的文件类型，因此会出现一些不同寻常的扩展名（如`.hpp`和`.hxx`）来表示C++的的头文件是有道理的。
+</code></pre>
+<h3 id="2-1-5名称空间">2.1.5	名称空间</h3>
+<pre><code>如果使用`iostream`，而不是`iostream.h`，则使用如下指令
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+<p>不要着急它是干嘛用的，在以后再了解</p>
+<pre><code>`namespace`是C++的特性，比如有两个封装好的代码`Microflop`和`Piscine`要想同时使用时该怎么办呢，
+</code></pre>
+<p>就不能使用<code>using namespace std</code>了，这时可以使用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microflop::<span class="built_in">wanda</span>(<span class="string">&quot;Go dancing?&quot;</span>)		<span class="comment">//use Microflop namespace stdPiscine::wanda(&quot;A fish named Tom&quot;)	//use Piscine namespace std</span></span><br></pre></td></tr></table></figure>
+<p>这就可以区分两个<code>wanda()</code>的不同之处了</p>
+<h3 id="2-1-6使用cout进行C-输出">2.1.6	使用cout进行C++输出</h3>
+<pre><code>现在来看看C++是如何输出信息的，在`myfirst.cpp`中是这样的
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>双引号括起来的是字符串，也就是要打印的消息。<code>&lt;&lt;</code>把这个字符串发送给<code>cout</code></p>
+<p>而<code>cout</code>是一个预定义的对象，它知道如何显示字符</p>
+<h4 id="1-控制符endl">1.控制符endl</h4>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<p>现在来看看这个例子，endl表达一个<em><strong>重要的概念：重起一行（）（输出一段后默认不换行）</strong></em></p>
+<p>在输入流中加入它会使光标移至下一行。诸如endl等对cout有意义的字符被称为***控制符（manipulator）***和cout一样，endl实在iostream中定义的，且位于命名空间std中</p>
+<h4 id="2-换行符">2.换行符</h4>
+<p>C++还提供了一种旧式用法：<strong>\n</strong></p>
+<p>它被视为一个字符<em><strong>换行符</strong></em></p>
+<p><strong>换行符是一种被称为”转义序列“的按键组合</strong></p>
+<h3 id="2-1-7-C-源码格式化">2.1.7 C++源码格式化</h3>
+<p>在C++中，<code>;</code>代表了语句的结束，通常，<em><strong>在能使用回车的地方也能使用空格，反之亦然</strong></em></p>
+<p>但是，<strong>不能把空格、制表符或回车放在元素（如名称），也不能把回车放在字符串中间</strong></p>
+<p>如下就是一个错误例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> ma <span class="title">in</span><span class="params">()</span><span class="keyword">return</span> 0</span>;cout &lt;&lt; <span class="string">&quot;Behold the Beans of Beauty!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="1-源代码的标记和空白">1.源代码的标记和空白</h4>
+<p><em><strong>一行代码中不可分割的一部分叫做标记（token）</strong></em></p>
+<p>通常必须用空格、制表符或回车将标记分开。有些字符如<code>,</code>或<code>()</code>是不需要用空白分开的标记</p>
+<p>如下举例说明了何种情况需要分开，什么情况下可以省略</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return0;	<span class="comment">//INVALLD, must be return 0;return(0);	//VALLD, white space omittedreturn (0);	//VALLD, white space useintmain();	//INVALLD, white space omittedint main()	//VALLD, white space omitted in ()int main ()	//VALLD, white space in  ()</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-C-源代码风格">2. C++源代码风格</h4>
+<ul>
+<li>每条语句个占一行</li>
+<li>每个函数都有一个开始花括号和一个结束花括号，两个花括号个占一行</li>
+<li>函数中的语句都要相对于花括号进行缩进</li>
+<li>与函数名称相关的花括号周围没有空白</li>
+</ul>
+<p>前三条规则用来保证代码清晰可读，第四条用来帮助区分函数和一些也使用圆括号的C++内置结构（如循环）</p>
+<h2 id="2-2C-语句">2.2	C++语句</h2>
+<pre><code>C++程序是一组函数，而每个函数又是有一组语句组成的
+</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>int main()&#123;    using namespace std;    <span class="comment">/*    using namespace std；    是一个神奇的东西，叫做 using 编译指令    亦可不使用该指令可在以后的语句中需使用：        iostream::fun();    */</span>    int carrots;         <span class="comment">// declare an interger variable    carrots = 25;        //assign a value to the variable    cout &lt;&lt; &quot;I have &quot;;    cout &lt;&lt; carrots;    cout &lt;&lt; &quot; carrots .&quot;;    cout &lt;&lt; endl;    carrots = carrots - 1;    cout &lt;&lt; &quot;Crunch, Crunch. Now I have &quot; &lt;&lt; carrots &lt;&lt; &quot; carrots. &quot; &lt;&lt; endl;    return 0;&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>空白部分将声明语句和其他语句分开，这是C的常用用法，但在C++中并不常见</p>
+<h3 id="2-2-1申明语句和变量">2.2.1	申明语句和变量</h3>
+<p>例如，在2.2的程序中包含了这样一条声明语句</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> carrots;</span><br></pre></td></tr></table></figure>
+<p>这条语句提供了两个信息：需要的内存，以及该内存单元的名称，这条语句指出程序需要足够的储存来储存一个整数</p>
+<p>，在C++中int表示整数——没有小数部分的数字。</p>
+<p><em><strong>C++的int类型可以为正，也可为负，但大小取决于实现</strong></em></p>
+<p>完成的第二项任务时给储存单元指定名称。在这里，该声明语句指出，此后程序使用名称<code>carrots</code>来标识储存在该内存单元的值。<code>carrot</code>被称为变量，因为它的值可以修改，<em><strong>在C++中，所有的变量必须声明（尽可能在首次使用时声明）</strong></em></p>
+<h3 id="2-2-2赋值语句">2.2.2	赋值语句</h3>
+<p>赋值语句将值赋给储存单元，例如，下列语句将25赋给表示变量carrots的内存单元</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">carrots = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p>符号<code>=</code>叫做赋值运算符。C++和C语言都有一个特性——可以使用连续赋值运算符。例如下面的例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> steinway;<span class="keyword">int</span> baldwin;yamaha = baldwin = steinway = <span class="number">88</span></span><br></pre></td></tr></table></figure>
+<p><em><strong>赋值是从右向左进行的</strong></em></p>
+<h3 id="2-2-3cout的新花样">2.2.3	cout的新花样</h3>
+<p>cout可用于数字和字符串。但是别忘了，<em><strong>整数25和字符串“25&quot;有天壤之别。</strong></em></p>
+<p>程序没有打印<code>carrots</code>，而是打印存储在<code>carrots</code>中的整数值。实际上，这两个操作和二为一了。首先，cout将carrots替换为其当前值25，然后把值转换为合适的输出字符。</p>
+<h2 id="2-3其他C-语句">2.3	其他C++语句</h2>
+<p>再来看几个C++语句的例子</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// getinfo.cpp -- input and output</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> carrots;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;How many carrots do you have?&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cin &gt;&gt; carrots; <span class="comment">// C++ input</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Here are two more.&quot;</span>;</span><br><span class="line">    carrots = carrots + <span class="number">2</span>;</span><br><span class="line">    <span class="comment">// the next line concatenates output</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Now you have&quot;</span> &lt;&lt; carrots &lt;&lt; <span class="string">&quot; carrots .&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第一条cin语句在输入输入数字按下enter建时读取输入，第二个cin语句让程序暂停，直到摁下enter建。</p>
+<h3 id="2-3-1使用cin">2.3.1	使用cin</h3>
+<p>上面的输出表明，从键盘中输入的值（12）会被最终赋值给carrots。下面就是执行这项功能的语句：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cin &gt;&gt; carrots;</span><br></pre></td></tr></table></figure>
+<p>从这条语句可知，信息从cin流向carrots</p>
+<h3 id="2-3-2使用cout进行拼接">2.3.2	使用cout进行拼接</h3>
+<p>getinfo.cpp的一项新特性是将四条语句合并成一条。iostream定义了&lt;&lt;运算，以便可以像下面这样合并（拼接）输出</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span> &lt;&lt; <span class="string">&quot;b&quot;</span> &lt;&lt; <span class="string">&quot;c&quot;</span> &lt;&lt; <span class="string">&quot;d&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>也可以这样写</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;b&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;c&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;d&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>当然也可以这样</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;b&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;c&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;d&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-3-4类简介">2.3.4	类简介</h3>
+<p>类是用户定义的一种数据类型。要定义类需要描述它能够表示什么东西和可对数据进行哪些操作。</p>
+<p>类之于对象就像类型之于变量。</p>
+<p>接下来更具体一些，前文中讲过下面的变量声明</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> carrots;</span><br></pre></td></tr></table></figure>
+<p>这句代码将创建一个类型为int的变量。也就是说carrots可以储存整数可以按特定的方法使用，比如说加或减。现在来看cout，它是一个ostream类对象。ostream类定义(iostream文件的另一个成员)</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>交个朋友...</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="JerryMiao2019 别当真啦">
+        <p>别当真啦</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>JerryMiao2019
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/" title="第二章：进入C++">http://example.com/2021/09/25/第二章：进入CPP/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/" rel="prev" title="第一章：开始学习C++">
+      <i class="fa fa-chevron-left"></i> 第一章：开始学习C++
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/10/05/%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/" rel="next" title="在文章中添加音乐">
+      在文章中添加音乐 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">第二章：进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9%E5%8C%85%E6%8B%AC%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">内容包括：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E8%BF%9B%E5%85%A5-C"><span class="nav-number">1.2.</span> <span class="nav-text">2.1 进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-main-%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1.1 main() 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%88%86%E5%8F%B7"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">语句和分号</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E4%BD%9C%E4%B8%BA%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%87%BD%E6%95%B0%E5%A4%B4"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">1.作为接口的函数头</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88-main-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%90%8D%E7%A7%B0"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">2. 为什么 main()不能使用其他名称</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-C-%E6%B3%A8%E9%87%8A"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.1.2  C++ 注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-C-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E5%92%8C-iostream-%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.1.3  C++预处理器和 iostream 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-%E5%A4%B4%E6%96%87%E4%BB%B6%E5%90%8D"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.1.4  头文件名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-5%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4"><span class="nav-number">1.2.5.</span> <span class="nav-text">2.1.5	名称空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-6%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8CC-%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.</span> <span class="nav-text">2.1.6	使用cout进行C++输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%8E%A7%E5%88%B6%E7%AC%A6endl"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">1.控制符endl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%8D%A2%E8%A1%8C%E7%AC%A6"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">2.换行符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-7-C-%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-number">1.2.7.</span> <span class="nav-text">2.1.7 C++源码格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%BA%90%E4%BB%A3%E7%A0%81%E7%9A%84%E6%A0%87%E8%AE%B0%E5%92%8C%E7%A9%BA%E7%99%BD"><span class="nav-number">1.2.7.1.</span> <span class="nav-text">1.源代码的标记和空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-C-%E6%BA%90%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC"><span class="nav-number">1.2.7.2.</span> <span class="nav-text">2. C++源代码风格</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">2.2	C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1%E7%94%B3%E6%98%8E%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%8F%98%E9%87%8F"><span class="nav-number">1.3.1.</span> <span class="nav-text">2.2.1	申明语句和变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2%E8%B5%8B%E5%80%BC%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.2.2	赋值语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3cout%E7%9A%84%E6%96%B0%E8%8A%B1%E6%A0%B7"><span class="nav-number">1.3.3.</span> <span class="nav-text">2.2.3	cout的新花样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3%E5%85%B6%E4%BB%96C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.4.</span> <span class="nav-text">2.3	其他C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1%E4%BD%BF%E7%94%A8cin"><span class="nav-number">1.4.1.</span> <span class="nav-text">2.3.1	使用cin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8C%E6%8B%BC%E6%8E%A5"><span class="nav-number">1.4.2.</span> <span class="nav-text">2.3.2	使用cout进行拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-4%E7%B1%BB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.3.</span> <span class="nav-text">2.3.4	类简介</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JerryMiao2019"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">JerryMiao2019</p>
+  <div class="site-description" itemprop="description">涉猎Python;C++</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/JerryMiao2019" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;JerryMiao2019" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:JerryMiao2019@outlook.com" title="E-Mail → mailto:JerryMiao2019@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JerryMiao2019</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">23k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">39 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b3725aecae685d9d5354',
+      clientSecret: '5dac75b455a9a676092dc886c3b3ec2a3623ba1b',
+      repo        : 'jerrymiao2019.github.io',
+      owner       : 'JerryMiao2019',
+      admin       : ['JerryMiao2019'],
+      id          : '8477a8b207ae96a2861acdc18d101c48',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+    </div>
+</body>
+</html>

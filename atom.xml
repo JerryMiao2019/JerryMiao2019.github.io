@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JerryMiao2019 的个人 Blog</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>知否？ 饭否？</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-12-31T12:03:16.024Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>JerryMiao2019</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>再见，2024</title>
+    <link href="http://example.com/2024/12/31/%E5%86%8D%E8%A7%81%EF%BC%8C2024/"/>
+    <id>http://example.com/2024/12/31/%E5%86%8D%E8%A7%81%EF%BC%8C2024/</id>
+    <published>2024-12-31T12:02:12.000Z</published>
+    <updated>2024-12-31T12:03:16.024Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="杂记" scheme="http://example.com/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="杂记" scheme="http://example.com/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记那个盛夏</title>
+    <link href="http://example.com/2022/12/30/%E8%AE%B0%E9%82%A3%E4%B8%AA%E7%9B%9B%E5%A4%8F/"/>
+    <id>http://example.com/2022/12/30/%E8%AE%B0%E9%82%A3%E4%B8%AA%E7%9B%9B%E5%A4%8F/</id>
+    <published>2022-12-30T06:55:20.000Z</published>
+    <updated>2022-12-30T07:01:57.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="记录" scheme="http://example.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="随笔" scheme="http://example.com/categories/%E8%AE%B0%E5%BD%95/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="记录" scheme="http://example.com/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="时光" scheme="http://example.com/tags/%E6%97%B6%E5%85%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>再见 CentOS！</title>
+    <link href="http://example.com/2022/01/01/%E5%86%8D%E8%A7%81CentOS/"/>
+    <id>http://example.com/2022/01/01/%E5%86%8D%E8%A7%81CentOS/</id>
+    <published>2022-01-01T06:18:39.000Z</published>
+    <updated>2022-01-01T06:32:17.074Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="杂记" scheme="http://example.com/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在文章中添加音乐</title>
+    <link href="http://example.com/2021/10/05/%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/"/>
+    <id>http://example.com/2021/10/05/%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</id>
+    <published>2021-10-05T12:54:25.000Z</published>
+    <updated>2022-02-27T14:01:02.826Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;此文章就记录一下我在文章中添加音乐的艰辛历程&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第二章：进入C++</title>
+    <link href="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/"/>
+    <id>http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/</id>
+    <published>2021-09-25T13:52:31.000Z</published>
+    <updated>2021-10-05T09:58:02.730Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;第二章：进入 C++&lt;/h1&gt;
+&lt;h2 id=&quot;内容包括：&quot;&gt;内容包括：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;C++ 程序的一般格式；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#include &lt;/code&gt;  指令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main() &lt;/code&gt;  函数；&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;cout&lt;/code&gt;对象进行输出；&lt;/li&gt;
+&lt;li&gt;在C++程序中加入注释；&lt;/li&gt;
+&lt;li&gt;何时以及如何使用&lt;code&gt;endl&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;声明和使用变量；&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;cin&lt;/code&gt;对象进行输入；&lt;/li&gt;
+&lt;li&gt;定义和使用简单函数。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一章：开始学习C++</title>
+    <link href="http://example.com/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/"/>
+    <id>http://example.com/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/</id>
+    <published>2021-09-25T13:51:00.000Z</published>
+    <updated>2021-10-05T09:58:12.552Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;开始学习C++&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;编辑器为 JetBrains 赞助的 CLion&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++入门</title>
+    <link href="http://example.com/2021/08/08/CPP-%E5%85%A5%E9%97%A8/"/>
+    <id>http://example.com/2021/08/08/CPP-%E5%85%A5%E9%97%A8/</id>
+    <published>2021-08-08T13:34:42.000Z</published>
+    <updated>2022-01-01T06:34:49.028Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ultraman</title>
+    <link href="http://example.com/2021/05/01/Ultraman/"/>
+    <id>http://example.com/2021/05/01/Ultraman/</id>
+    <published>2021-05-01T13:49:59.000Z</published>
+    <updated>2021-10-05T09:57:49.515Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​	刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。&lt;/p&gt;
+&lt;p&gt;​	一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="None" scheme="http://example.com/categories/None/"/>
+    
+    
+    <category term="Ultraman" scheme="http://example.com/tags/Ultraman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Github.io+Hexo搭建个人博客</title>
+    <link href="http://example.com/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2021/04/10/%E5%9F%BA%E4%BA%8EGithub-io-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-04-10T05:54:03.000Z</published>
+    <updated>2022-12-30T07:01:57.124Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这篇文章是我搭建Blog的启蒙文章，我 &lt;a href=&quot;https://jerrymiao2019.github.io&quot;&gt;https://jerrymiao2019.github.io&lt;/a&gt; 的Blog就是基于此搭建的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="GitHub" scheme="http://example.com/categories/GitHub/"/>
+    
+    <category term="Hexo" scheme="http://example.com/categories/GitHub/Hexo/"/>
+    
+    
+    <category term="GitHub" scheme="http://example.com/tags/GitHub/"/>
+    
+    <category term="github.io" scheme="http://example.com/tags/github-io/"/>
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2021/04/09/hello-world/"/>
+    <id>http://example.com/2021/04/09/hello-world/</id>
+    <published>2021-04-09T12:53:36.974Z</published>
+    <updated>2021-04-10T05:50:19.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
