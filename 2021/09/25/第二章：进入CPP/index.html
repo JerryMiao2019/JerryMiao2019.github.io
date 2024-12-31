@@ -21,12 +21,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="第二章：进入 C++ 内容包括：  C++ 程序的一般格式； #include   指令； main()   函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
+  <meta name="description" content="第二章：进入 C++内容包括： C++ 程序的一般格式； #include  指令； main()  函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第二章：进入C++">
 <meta property="og:url" content="http://example.com/2021/09/25/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5CPP/index.html">
 <meta property="og:site_name" content="JerryMiao2019 的个人 Blog">
-<meta property="og:description" content="第二章：进入 C++ 内容包括：  C++ 程序的一般格式； #include   指令； main()   函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
+<meta property="og:description" content="第二章：进入 C++内容包括： C++ 程序的一般格式； #include  指令； main()  函数； 使用cout对象进行输出； 在C++程序中加入注释； 何时以及如何使用endl； 声明和使用变量； 使用cin对象进行输入； 定义和使用简单函数。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-09-25T13:52:31.000Z">
 <meta property="article:modified_time" content="2021-10-05T09:58:02.730Z">
@@ -278,12 +278,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1>第二章：进入 C++</h1>
-<h2 id="内容包括：">内容包括：</h2>
-<ul>
+        <h1 id="第二章：进入-C"><a href="#第二章：进入-C" class="headerlink" title="第二章：进入 C++"></a>第二章：进入 C++</h1><h2 id="内容包括："><a href="#内容包括：" class="headerlink" title="内容包括："></a>内容包括：</h2><ul>
 <li>C++ 程序的一般格式；</li>
-<li><code>#include </code>  指令；</li>
-<li><code>main() </code>  函数；</li>
+<li><code>#include</code>  指令；</li>
+<li><code>main()</code>  函数；</li>
 <li>使用<code>cout</code>对象进行输出；</li>
 <li>在C++程序中加入注释；</li>
 <li>何时以及如何使用<code>endl</code>；</li>
@@ -292,86 +290,62 @@
 <li>定义和使用简单函数。</li>
 </ul>
 <span id="more"></span>
-<h2 id="2-1-进入-C">2.1 进入 C++</h2>
-<p><strong>C++对大小写敏感，对拼写也是敏感的，所以不能使用如<code>COUT</code>和<code>Kout</code>等单词</strong></p>
-<p>*<code>cpp</code>*是一种表示 C++ 程序的方式</p>
+<h2 id="2-1-进入-C"><a href="#2-1-进入-C" class="headerlink" title="2.1 进入 C++"></a>2.1 进入 C++</h2><p><strong>C++对大小写敏感，对拼写也是敏感的，所以不能使用如<code>COUT</code>和<code>Kout</code>等单词</strong></p>
+<p><em><code>cpp</code></em>是一种表示 C++ 程序的方式</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// myfirst.cpp -- display a message</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>                      <span class="comment">// a PREPROCESSOR directive</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>                          <span class="comment">// function header</span></span></span><br><span class="line"><span class="function"></span>&#123;                                <span class="comment">// start of function body</span></span><br><span class="line">   <span class="keyword">using</span> <span class="keyword">namespace</span> std;               <span class="comment">// make definitions visible</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>; <span class="comment">// message</span></span><br><span class="line">   cout &lt;&lt; endl;                    <span class="comment">// start a new line.</span></span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;You won&#x27;t regret it!&quot;</span> &lt;&lt; endl;    <span class="comment">// more output</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-1-1-main-函数">2.1.1 main() 函数</h3>
-<pre><code>去掉修饰后，程序 2.1 的基本结构会是这样
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	statements;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-1-1-main-函数"><a href="#2-1-1-main-函数" class="headerlink" title="2.1.1 main() 函数"></a>2.1.1 main() 函数</h3><pre><code>去掉修饰后，程序 2.1 的基本结构会是这样
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	statements;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <pre><code>这几行表明有一个 main 函数，并描述了该函数的行为。
-</code></pre>
-<p>这几行代码构成了<strong>函数定义（function definition）</strong>。</p>
+</code></pre><p>这几行代码构成了<strong>函数定义（function definition）</strong>。</p>
 <pre><code>该定义有两部分组成：
-</code></pre>
-<ol>
+</code></pre><ol>
 <li>第一行  <code>int main()</code>  叫<strong>函数头</strong>。</li>
 <li>花括号（<strong>{和}</strong>）中包括的部分叫做函数体。</li>
 </ol>
 <p><strong>函数体是指出函数因该做什么的计算机指令、在C++中，每一条完整的指令都被称为语句，语句以<code>;</code>结尾。</strong></p>
 <p><code>main()</code>中最后一条语句为<strong>结束语句（return statements）</strong>，它用来结束函数。</p>
-<h4 id="语句和分号">语句和分号</h4>
-<pre><code>语句是要执行的操作，C++ 和 C 不像 Python 或 Pascal 一样使用回车做语句的结尾，终止符是一个分号，它是语句结束的标记，
-</code></pre>
-<p>是语句的组成部分，而不是语句之间的标记。结论是<strong>在 C++ 中不能省略分号。</strong></p>
-<h5 id="1-作为接口的函数头">1.作为接口的函数头</h5>
-<pre><code>	下面的函数头表明`main()`函数可以调用他的函数返回一个整数值，
-</code></pre>
-<p>且不从调用他的函数那里获得任何东西：</p>
+<h4 id="语句和分号"><a href="#语句和分号" class="headerlink" title="语句和分号"></a>语句和分号</h4><pre><code>语句是要执行的操作，C++ 和 C 不像 Python 或 Pascal 一样使用回车做语句的结尾，终止符是一个分号，它是语句结束的标记，
+</code></pre><p>是语句的组成部分，而不是语句之间的标记。结论是<strong>在 C++ 中不能省略分号。</strong></p>
+<h5 id="1-作为接口的函数头"><a href="#1-作为接口的函数头" class="headerlink" title="1.作为接口的函数头"></a>1.作为接口的函数头</h5><pre><code>    下面的函数头表明`main()`函数可以调用他的函数返回一个整数值，
+</code></pre><p>且不从调用他的函数那里获得任何东西：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
-<pre><code>	有很多现有的程序使用经典的C语言函数头：
-</code></pre>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br></pre></td></tr></table></figure>
-<pre><code>	在C语言中，省略返回类型则默认为 int ，当然可以使用下列变体：
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br></pre></td></tr></table></figure>
-<pre><code>	括号中的`void`指出函数不接受任何的参数，在C++中，让括号空着等效于在括号中使用`void`
+<pre><code>    有很多现有的程序使用经典的C语言函数头：
+</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main()</span><br></pre></td></tr></table></figure>
+<pre><code>    在C语言中，省略返回类型则默认为 int ，当然可以使用下列变体：
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br></pre></td></tr></table></figure>
+<pre><code>    括号中的`void`指出函数不接受任何的参数，在C++中，让括号空着等效于在括号中使用`void`
 
-	当然也可以使用下面的函数头，并省略返回语句：
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
-<pre><code>	如果不在`main()`函数后增加返回语句，编译器将默认为：
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-<pre><code>	**这条隐式语句只适用于*`main()`函数***
-</code></pre>
-<h5 id="2-为什么-main-不能使用其他名称">2. 为什么 <code>main()</code>不能使用其他名称</h5>
-<pre><code>	是因为必须这么做，通常C++程序必须包含一个`main()`函数（不是`Main()`、`MAIN()`或`mane()`）
+    当然也可以使用下面的函数头，并省略返回语句：
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<pre><code>    如果不在`main()`函数后增加返回语句，编译器将默认为：
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<pre><code>    **这条隐式语句只适用于*`main()`函数***
+</code></pre><h5 id="2-为什么-main-不能使用其他名称"><a href="#2-为什么-main-不能使用其他名称" class="headerlink" title="2. 为什么 main()不能使用其他名称"></a>2. 为什么 <code>main()</code>不能使用其他名称</h5><pre><code>    是因为必须这么做，通常C++程序必须包含一个`main()`函数（不是`Main()`、`MAIN()`或`mane()`）
 
-	存在一些列外情况，比如在Windows编程中可以编写一个动态链接库（DLL）模块，
+    存在一些列外情况，比如在Windows编程中可以编写一个动态链接库（DLL）模块，
 
 这是其他Windows程序可以使用的代码。由于DLL不是独立的程序，所以不需要`main()`，
 
 亦或是一些框架程序或机器人中的控制芯片。
-</code></pre>
-<h3 id="2-1-2-C-注释">2.1.2  C++ 注释</h3>
-<pre><code>C++注释以`//`打头，使用时编译器会自动跳过，它可以位于新的一行，也可以和代码在同一行。
-</code></pre>
-<p>C++也能识别C语言注释 C 注释包括在 <code>/*</code> 和 <code>*/</code> 之间，由于它以<code>*/</code>结尾，所以可以跨越多行。</p>
-<h3 id="2-1-3-C-预处理器和-iostream-文件">2.1.3  C++预处理器和 iostream 文件</h3>
-<pre><code>如果要是程序能够进行输入和输出，则会使用如下代码：
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="2-1-2-C-注释"><a href="#2-1-2-C-注释" class="headerlink" title="2.1.2  C++ 注释"></a>2.1.2  C++ 注释</h3><pre><code>C++注释以`//`打头，使用时编译器会自动跳过，它可以位于新的一行，也可以和代码在同一行。
+</code></pre><p>C++也能识别C语言注释 C 注释包括在 <code>/*</code> 和 <code>*/</code> 之间，由于它以<code>*/</code>结尾，所以可以跨越多行。</p>
+<h3 id="2-1-3-C-预处理器和-iostream-文件"><a href="#2-1-3-C-预处理器和-iostream-文件" class="headerlink" title="2.1.3  C++预处理器和 iostream 文件"></a>2.1.3  C++预处理器和 iostream 文件</h3><pre><code>如果要是程序能够进行输入和输出，则会使用如下代码：
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
 <pre><code>当然可以使用其他代码替换掉第二行，第一行的`#include &lt;iostream&gt;`编译指令使预处理器将`iostream`文件的添加到程序中。
-</code></pre>
-<p>这是一种典型的预处理器做法：在源代码被编译之前，替换或添加文本。</p>
+</code></pre><p>这是一种典型的预处理器做法：在源代码被编译之前，替换或添加文本。</p>
 <pre><code>这提出了一个问题，为什么要将`iostream`文件的内容添加到程序中呢？
-</code></pre>
-<p>答案涉及到程序与外部的通信。<code>iostream</code>中的<code>io</code>是指输入（进入程序的信息）和输出（从程序中发出的信息）。C++的输入和输出方案涉及<code>iostream</code> 文件中的多个定义。为了使用<code>cout</code>来显示消息，第一个程序需要这些定义。为了使用<code>cout </code>来显示消息，第一个程序需要这些定义。</p>
-<p>#include编译指令导致<code>iostream</code>文件的内容随源代码的内容一起被发送给编译器。实际上，<code>iostream</code> 文件的内容将会取代程序中的代码行</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure>
+</code></pre><p>答案涉及到程序与外部的通信。<code>iostream</code>中的<code>io</code>是指输入（进入程序的信息）和输出（从程序中发出的信息）。C++的输入和输出方案涉及<code>iostream</code> 文件中的多个定义。为了使用<code>cout</code>来显示消息，第一个程序需要这些定义。为了使用<code>cout</code>来显示消息，第一个程序需要这些定义。</p>
+<h1 id="include编译指令导致iostream文件的内容随源代码的内容一起被发送给编译器。实际上，iostream-文件的内容将会取代程序中的代码行"><a href="#include编译指令导致iostream文件的内容随源代码的内容一起被发送给编译器。实际上，iostream-文件的内容将会取代程序中的代码行" class="headerlink" title="include编译指令导致iostream文件的内容随源代码的内容一起被发送给编译器。实际上，iostream 文件的内容将会取代程序中的代码行"></a>include编译指令导致<code>iostream</code>文件的内容随源代码的内容一起被发送给编译器。实际上，<code>iostream</code> 文件的内容将会取代程序中的代码行</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>原始文件没有被修改，而是将源代码文件和<code>iostream</code>组成一个复合文件，编译的下一阶段将要使用到该文件。</p>
 <p><strong>注意：使用<code>cin</code>和<code>cout</code>进行输入和输出的程序时必须包含文件<code>iostream</code>。</strong></p>
-<h3 id="2-1-4-头文件名">2.1.4  头文件名</h3>
-<pre><code>想`iostream`这样的文件叫做包含文件（include file)——由于他们被包含在其他文件中；也叫做头文件（head file）——
-</code></pre>
-<p>由于它们是被包含在文件的起始处。C++编译器自带了许多头文件，每个头文件都支持一组特定的工具。C语言的传统是，头文件</p>
+<h3 id="2-1-4-头文件名"><a href="#2-1-4-头文件名" class="headerlink" title="2.1.4  头文件名"></a>2.1.4  头文件名</h3><pre><code>想`iostream`这样的文件叫做包含文件（include file)——由于他们被包含在其他文件中；也叫做头文件（head file）——
+</code></pre><p>由于它们是被包含在文件的起始处。C++编译器自带了许多头文件，每个头文件都支持一组特定的工具。C语言的传统是，头文件</p>
 <p>使用扩展名 h，将其作为一种通用名称标识文件类型的基本方式</p>
 <p>列如，头文件<code>math.h</code>支持c语言的数学运算函数，但是C++的用法变了。</p>
 <p>现在，C++对老式的C语言扩展头<code>.h</code>做了保留，而C++则没有扩展名。</p>
 <p>有些C头文件被转换成C++的头文件，并在文件名的最前面加上<code>c</code>来表明他原来是C的头文件，如<code>cmath</code></p>
 <p>总而言之</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -408,88 +382,69 @@
 </tr>
 </tbody>
 </table>
+</div>
 <pre><code>由于C使用不同的扩展名表示不同的文件类型，因此会出现一些不同寻常的扩展名（如`.hpp`和`.hxx`）来表示C++的的头文件是有道理的。
-</code></pre>
-<h3 id="2-1-5名称空间">2.1.5	名称空间</h3>
-<pre><code>如果使用`iostream`，而不是`iostream.h`，则使用如下指令
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="2-1-5-名称空间"><a href="#2-1-5-名称空间" class="headerlink" title="2.1.5    名称空间"></a>2.1.5    名称空间</h3><pre><code>如果使用`iostream`，而不是`iostream.h`，则使用如下指令
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
 <p>不要着急它是干嘛用的，在以后再了解</p>
 <pre><code>`namespace`是C++的特性，比如有两个封装好的代码`Microflop`和`Piscine`要想同时使用时该怎么办呢，
-</code></pre>
-<p>就不能使用<code>using namespace std</code>了，这时可以使用</p>
+</code></pre><p>就不能使用<code>using namespace std</code>了，这时可以使用</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microflop::<span class="built_in">wanda</span>(<span class="string">&quot;Go dancing?&quot;</span>)		<span class="comment">//use Microflop namespace stdPiscine::wanda(&quot;A fish named Tom&quot;)	//use Piscine namespace std</span></span><br></pre></td></tr></table></figure>
 <p>这就可以区分两个<code>wanda()</code>的不同之处了</p>
-<h3 id="2-1-6使用cout进行C-输出">2.1.6	使用cout进行C++输出</h3>
-<pre><code>现在来看看C++是如何输出信息的，在`myfirst.cpp`中是这样的
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="2-1-6-使用cout进行C-输出"><a href="#2-1-6-使用cout进行C-输出" class="headerlink" title="2.1.6    使用cout进行C++输出"></a>2.1.6    使用cout进行C++输出</h3><pre><code>现在来看看C++是如何输出信息的，在`myfirst.cpp`中是这样的
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;Come up and C++ me some time&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>双引号括起来的是字符串，也就是要打印的消息。<code>&lt;&lt;</code>把这个字符串发送给<code>cout</code></p>
 <p>而<code>cout</code>是一个预定义的对象，它知道如何显示字符</p>
-<h4 id="1-控制符endl">1.控制符endl</h4>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
-<p>现在来看看这个例子，endl表达一个<em><strong>重要的概念：重起一行（）（输出一段后默认不换行）</strong></em></p>
-<p>在输入流中加入它会使光标移至下一行。诸如endl等对cout有意义的字符被称为***控制符（manipulator）***和cout一样，endl实在iostream中定义的，且位于命名空间std中</p>
-<h4 id="2-换行符">2.换行符</h4>
-<p>C++还提供了一种旧式用法：<strong>\n</strong></p>
-<p>它被视为一个字符<em><strong>换行符</strong></em></p>
+<h4 id="1-控制符endl"><a href="#1-控制符endl" class="headerlink" title="1.控制符endl"></a>1.控制符endl</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<p>现在来看看这个例子，endl表达一个<strong><em>重要的概念：重起一行（）（输出一段后默认不换行）</em></strong></p>
+<p>在输入流中加入它会使光标移至下一行。诸如endl等对cout有意义的字符被称为<strong><em>控制符（manipulator）</em></strong>和cout一样，endl实在iostream中定义的，且位于命名空间std中</p>
+<h4 id="2-换行符"><a href="#2-换行符" class="headerlink" title="2.换行符"></a>2.换行符</h4><p>C++还提供了一种旧式用法：<strong>\n</strong></p>
+<p>它被视为一个字符<strong><em>换行符</em></strong></p>
 <p><strong>换行符是一种被称为”转义序列“的按键组合</strong></p>
-<h3 id="2-1-7-C-源码格式化">2.1.7 C++源码格式化</h3>
-<p>在C++中，<code>;</code>代表了语句的结束，通常，<em><strong>在能使用回车的地方也能使用空格，反之亦然</strong></em></p>
+<h3 id="2-1-7-C-源码格式化"><a href="#2-1-7-C-源码格式化" class="headerlink" title="2.1.7 C++源码格式化"></a>2.1.7 C++源码格式化</h3><p>在C++中，<code>;</code>代表了语句的结束，通常，<strong><em>在能使用回车的地方也能使用空格，反之亦然</em></strong></p>
 <p>但是，<strong>不能把空格、制表符或回车放在元素（如名称），也不能把回车放在字符串中间</strong></p>
 <p>如下就是一个错误例子：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> ma <span class="title">in</span><span class="params">()</span><span class="keyword">return</span> 0</span>;cout &lt;&lt; <span class="string">&quot;Behold the Beans of Beauty!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="1-源代码的标记和空白">1.源代码的标记和空白</h4>
-<p><em><strong>一行代码中不可分割的一部分叫做标记（token）</strong></em></p>
+<h4 id="1-源代码的标记和空白"><a href="#1-源代码的标记和空白" class="headerlink" title="1.源代码的标记和空白"></a>1.源代码的标记和空白</h4><p><strong><em>一行代码中不可分割的一部分叫做标记（token）</em></strong></p>
 <p>通常必须用空格、制表符或回车将标记分开。有些字符如<code>,</code>或<code>()</code>是不需要用空白分开的标记</p>
 <p>如下举例说明了何种情况需要分开，什么情况下可以省略</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return0;	<span class="comment">//INVALLD, must be return 0;return(0);	//VALLD, white space omittedreturn (0);	//VALLD, white space useintmain();	//INVALLD, white space omittedint main()	//VALLD, white space omitted in ()int main ()	//VALLD, white space in  ()</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-C-源代码风格">2. C++源代码风格</h4>
-<ul>
+<h4 id="2-C-源代码风格"><a href="#2-C-源代码风格" class="headerlink" title="2. C++源代码风格"></a>2. C++源代码风格</h4><ul>
 <li>每条语句个占一行</li>
 <li>每个函数都有一个开始花括号和一个结束花括号，两个花括号个占一行</li>
 <li>函数中的语句都要相对于花括号进行缩进</li>
 <li>与函数名称相关的花括号周围没有空白</li>
 </ul>
 <p>前三条规则用来保证代码清晰可读，第四条用来帮助区分函数和一些也使用圆括号的C++内置结构（如循环）</p>
-<h2 id="2-2C-语句">2.2	C++语句</h2>
-<pre><code>C++程序是一组函数，而每个函数又是有一组语句组成的
-</code></pre>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>int main()&#123;    using namespace std;    <span class="comment">/*    using namespace std；    是一个神奇的东西，叫做 using 编译指令    亦可不使用该指令可在以后的语句中需使用：        iostream::fun();    */</span>    int carrots;         <span class="comment">// declare an interger variable    carrots = 25;        //assign a value to the variable    cout &lt;&lt; &quot;I have &quot;;    cout &lt;&lt; carrots;    cout &lt;&lt; &quot; carrots .&quot;;    cout &lt;&lt; endl;    carrots = carrots - 1;    cout &lt;&lt; &quot;Crunch, Crunch. Now I have &quot; &lt;&lt; carrots &lt;&lt; &quot; carrots. &quot; &lt;&lt; endl;    return 0;&#125;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="2-2-C-语句"><a href="#2-2-C-语句" class="headerlink" title="2.2    C++语句"></a>2.2    C++语句</h2><pre><code>C++程序是一组函数，而每个函数又是有一组语句组成的
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span>int main()&#123;    using namespace std;    <span class="comment">/*    using namespace std；    是一个神奇的东西，叫做 using 编译指令    亦可不使用该指令可在以后的语句中需使用：        iostream::fun();    */</span>    int carrots;         <span class="comment">// declare an interger variable    carrots = 25;        //assign a value to the variable    cout &lt;&lt; &quot;I have &quot;;    cout &lt;&lt; carrots;    cout &lt;&lt; &quot; carrots .&quot;;    cout &lt;&lt; endl;    carrots = carrots - 1;    cout &lt;&lt; &quot;Crunch, Crunch. Now I have &quot; &lt;&lt; carrots &lt;&lt; &quot; carrots. &quot; &lt;&lt; endl;    return 0;&#125;</span></span></span><br></pre></td></tr></table></figure>
 <p>空白部分将声明语句和其他语句分开，这是C的常用用法，但在C++中并不常见</p>
-<h3 id="2-2-1申明语句和变量">2.2.1	申明语句和变量</h3>
-<p>例如，在2.2的程序中包含了这样一条声明语句</p>
+<h3 id="2-2-1-申明语句和变量"><a href="#2-2-1-申明语句和变量" class="headerlink" title="2.2.1    申明语句和变量"></a>2.2.1    申明语句和变量</h3><p>例如，在2.2的程序中包含了这样一条声明语句</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> carrots;</span><br></pre></td></tr></table></figure>
 <p>这条语句提供了两个信息：需要的内存，以及该内存单元的名称，这条语句指出程序需要足够的储存来储存一个整数</p>
 <p>，在C++中int表示整数——没有小数部分的数字。</p>
-<p><em><strong>C++的int类型可以为正，也可为负，但大小取决于实现</strong></em></p>
-<p>完成的第二项任务时给储存单元指定名称。在这里，该声明语句指出，此后程序使用名称<code>carrots</code>来标识储存在该内存单元的值。<code>carrot</code>被称为变量，因为它的值可以修改，<em><strong>在C++中，所有的变量必须声明（尽可能在首次使用时声明）</strong></em></p>
-<h3 id="2-2-2赋值语句">2.2.2	赋值语句</h3>
-<p>赋值语句将值赋给储存单元，例如，下列语句将25赋给表示变量carrots的内存单元</p>
+<p><strong><em>C++的int类型可以为正，也可为负，但大小取决于实现</em></strong></p>
+<p>完成的第二项任务时给储存单元指定名称。在这里，该声明语句指出，此后程序使用名称<code>carrots</code>来标识储存在该内存单元的值。<code>carrot</code>被称为变量，因为它的值可以修改，<strong><em>在C++中，所有的变量必须声明（尽可能在首次使用时声明）</em></strong></p>
+<h3 id="2-2-2-赋值语句"><a href="#2-2-2-赋值语句" class="headerlink" title="2.2.2    赋值语句"></a>2.2.2    赋值语句</h3><p>赋值语句将值赋给储存单元，例如，下列语句将25赋给表示变量carrots的内存单元</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">carrots = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
 <p>符号<code>=</code>叫做赋值运算符。C++和C语言都有一个特性——可以使用连续赋值运算符。例如下面的例子：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> steinway;<span class="keyword">int</span> baldwin;yamaha = baldwin = steinway = <span class="number">88</span></span><br></pre></td></tr></table></figure>
-<p><em><strong>赋值是从右向左进行的</strong></em></p>
-<h3 id="2-2-3cout的新花样">2.2.3	cout的新花样</h3>
-<p>cout可用于数字和字符串。但是别忘了，<em><strong>整数25和字符串“25&quot;有天壤之别。</strong></em></p>
+<p><strong><em>赋值是从右向左进行的</em></strong></p>
+<h3 id="2-2-3-cout的新花样"><a href="#2-2-3-cout的新花样" class="headerlink" title="2.2.3    cout的新花样"></a>2.2.3    cout的新花样</h3><p>cout可用于数字和字符串。但是别忘了，<strong><em>整数25和字符串“25”有天壤之别。</em></strong></p>
 <p>程序没有打印<code>carrots</code>，而是打印存储在<code>carrots</code>中的整数值。实际上，这两个操作和二为一了。首先，cout将carrots替换为其当前值25，然后把值转换为合适的输出字符。</p>
-<h2 id="2-3其他C-语句">2.3	其他C++语句</h2>
-<p>再来看几个C++语句的例子</p>
+<h2 id="2-3-其他C-语句"><a href="#2-3-其他C-语句" class="headerlink" title="2.3    其他C++语句"></a>2.3    其他C++语句</h2><p>再来看几个C++语句的例子</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// getinfo.cpp -- input and output</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> carrots;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;How many carrots do you have?&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cin &gt;&gt; carrots; <span class="comment">// C++ input</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Here are two more.&quot;</span>;</span><br><span class="line">    carrots = carrots + <span class="number">2</span>;</span><br><span class="line">    <span class="comment">// the next line concatenates output</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Now you have&quot;</span> &lt;&lt; carrots &lt;&lt; <span class="string">&quot; carrots .&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>第一条cin语句在输入输入数字按下enter建时读取输入，第二个cin语句让程序暂停，直到摁下enter建。</p>
-<h3 id="2-3-1使用cin">2.3.1	使用cin</h3>
-<p>上面的输出表明，从键盘中输入的值（12）会被最终赋值给carrots。下面就是执行这项功能的语句：</p>
+<h3 id="2-3-1-使用cin"><a href="#2-3-1-使用cin" class="headerlink" title="2.3.1    使用cin"></a>2.3.1    使用cin</h3><p>上面的输出表明，从键盘中输入的值（12）会被最终赋值给carrots。下面就是执行这项功能的语句：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cin &gt;&gt; carrots;</span><br></pre></td></tr></table></figure>
 <p>从这条语句可知，信息从cin流向carrots</p>
-<h3 id="2-3-2使用cout进行拼接">2.3.2	使用cout进行拼接</h3>
-<p>getinfo.cpp的一项新特性是将四条语句合并成一条。iostream定义了&lt;&lt;运算，以便可以像下面这样合并（拼接）输出</p>
+<h3 id="2-3-2-使用cout进行拼接"><a href="#2-3-2-使用cout进行拼接" class="headerlink" title="2.3.2    使用cout进行拼接"></a>2.3.2    使用cout进行拼接</h3><p>getinfo.cpp的一项新特性是将四条语句合并成一条。iostream定义了&lt;&lt;运算，以便可以像下面这样合并（拼接）输出</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span> &lt;&lt; <span class="string">&quot;b&quot;</span> &lt;&lt; <span class="string">&quot;c&quot;</span> &lt;&lt; <span class="string">&quot;d&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>也可以这样写</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;b&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;c&quot;</span>;</span><br><span class="line">cout &lt;&lt; <span class="string">&quot;d&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>当然也可以这样</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;a&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;b&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;c&quot;</span></span><br><span class="line">     &lt;&lt; <span class="string">&quot;d&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-3-4类简介">2.3.4	类简介</h3>
-<p>类是用户定义的一种数据类型。要定义类需要描述它能够表示什么东西和可对数据进行哪些操作。</p>
+<h3 id="2-3-4-类简介"><a href="#2-3-4-类简介" class="headerlink" title="2.3.4    类简介"></a>2.3.4    类简介</h3><p>类是用户定义的一种数据类型。要定义类需要描述它能够表示什么东西和可对数据进行哪些操作。</p>
 <p>类之于对象就像类型之于变量。</p>
 <p>接下来更具体一些，前文中讲过下面的变量声明</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> carrots;</span><br></pre></td></tr></table></figure>
@@ -610,7 +565,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">第二章：进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9%E5%8C%85%E6%8B%AC%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">内容包括：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E8%BF%9B%E5%85%A5-C"><span class="nav-number">1.2.</span> <span class="nav-text">2.1 进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-main-%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1.1 main() 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%88%86%E5%8F%B7"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">语句和分号</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E4%BD%9C%E4%B8%BA%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%87%BD%E6%95%B0%E5%A4%B4"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">1.作为接口的函数头</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88-main-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%90%8D%E7%A7%B0"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">2. 为什么 main()不能使用其他名称</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-C-%E6%B3%A8%E9%87%8A"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.1.2  C++ 注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-C-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E5%92%8C-iostream-%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.1.3  C++预处理器和 iostream 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-%E5%A4%B4%E6%96%87%E4%BB%B6%E5%90%8D"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.1.4  头文件名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-5%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4"><span class="nav-number">1.2.5.</span> <span class="nav-text">2.1.5	名称空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-6%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8CC-%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.</span> <span class="nav-text">2.1.6	使用cout进行C++输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%8E%A7%E5%88%B6%E7%AC%A6endl"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">1.控制符endl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%8D%A2%E8%A1%8C%E7%AC%A6"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">2.换行符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-7-C-%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-number">1.2.7.</span> <span class="nav-text">2.1.7 C++源码格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%BA%90%E4%BB%A3%E7%A0%81%E7%9A%84%E6%A0%87%E8%AE%B0%E5%92%8C%E7%A9%BA%E7%99%BD"><span class="nav-number">1.2.7.1.</span> <span class="nav-text">1.源代码的标记和空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-C-%E6%BA%90%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC"><span class="nav-number">1.2.7.2.</span> <span class="nav-text">2. C++源代码风格</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">2.2	C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1%E7%94%B3%E6%98%8E%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%8F%98%E9%87%8F"><span class="nav-number">1.3.1.</span> <span class="nav-text">2.2.1	申明语句和变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2%E8%B5%8B%E5%80%BC%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.2.2	赋值语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3cout%E7%9A%84%E6%96%B0%E8%8A%B1%E6%A0%B7"><span class="nav-number">1.3.3.</span> <span class="nav-text">2.2.3	cout的新花样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3%E5%85%B6%E4%BB%96C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.4.</span> <span class="nav-text">2.3	其他C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1%E4%BD%BF%E7%94%A8cin"><span class="nav-number">1.4.1.</span> <span class="nav-text">2.3.1	使用cin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8C%E6%8B%BC%E6%8E%A5"><span class="nav-number">1.4.2.</span> <span class="nav-text">2.3.2	使用cout进行拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-4%E7%B1%BB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.3.</span> <span class="nav-text">2.3.4	类简介</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%9B%E5%85%A5-C"><span class="nav-number">1.</span> <span class="nav-text">第二章：进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9%E5%8C%85%E6%8B%AC%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">内容包括：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E8%BF%9B%E5%85%A5-C"><span class="nav-number">1.2.</span> <span class="nav-text">2.1 进入 C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-main-%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1.1 main() 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%88%86%E5%8F%B7"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">语句和分号</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E4%BD%9C%E4%B8%BA%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%87%BD%E6%95%B0%E5%A4%B4"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">1.作为接口的函数头</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88-main-%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E5%90%8D%E7%A7%B0"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">2. 为什么 main()不能使用其他名称</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-C-%E6%B3%A8%E9%87%8A"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.1.2  C++ 注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-C-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E5%92%8C-iostream-%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.1.3  C++预处理器和 iostream 文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#include%E7%BC%96%E8%AF%91%E6%8C%87%E4%BB%A4%E5%AF%BC%E8%87%B4iostream%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9%E9%9A%8F%E6%BA%90%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%80%E8%B5%B7%E8%A2%AB%E5%8F%91%E9%80%81%E7%BB%99%E7%BC%96%E8%AF%91%E5%99%A8%E3%80%82%E5%AE%9E%E9%99%85%E4%B8%8A%EF%BC%8Ciostream-%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9%E5%B0%86%E4%BC%9A%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E4%BB%A3%E7%A0%81%E8%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">include编译指令导致iostream文件的内容随源代码的内容一起被发送给编译器。实际上，iostream 文件的内容将会取代程序中的代码行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-%E5%A4%B4%E6%96%87%E4%BB%B6%E5%90%8D"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1.4  头文件名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-5-%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.1.5    名称空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-6-%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8CC-%E8%BE%93%E5%87%BA"><span class="nav-number">2.0.3.</span> <span class="nav-text">2.1.6    使用cout进行C++输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%8E%A7%E5%88%B6%E7%AC%A6endl"><span class="nav-number">2.0.3.1.</span> <span class="nav-text">1.控制符endl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%8D%A2%E8%A1%8C%E7%AC%A6"><span class="nav-number">2.0.3.2.</span> <span class="nav-text">2.换行符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-7-C-%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-number">2.0.4.</span> <span class="nav-text">2.1.7 C++源码格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%BA%90%E4%BB%A3%E7%A0%81%E7%9A%84%E6%A0%87%E8%AE%B0%E5%92%8C%E7%A9%BA%E7%99%BD"><span class="nav-number">2.0.4.1.</span> <span class="nav-text">1.源代码的标记和空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-C-%E6%BA%90%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC"><span class="nav-number">2.0.4.2.</span> <span class="nav-text">2. C++源代码风格</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">2.1.</span> <span class="nav-text">2.2    C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-%E7%94%B3%E6%98%8E%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%8F%98%E9%87%8F"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.2.1    申明语句和变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-%E8%B5%8B%E5%80%BC%E8%AF%AD%E5%8F%A5"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.2.2    赋值语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-cout%E7%9A%84%E6%96%B0%E8%8A%B1%E6%A0%B7"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.2.3    cout的新花样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E5%85%B6%E4%BB%96C-%E8%AF%AD%E5%8F%A5"><span class="nav-number">2.2.</span> <span class="nav-text">2.3    其他C++语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-%E4%BD%BF%E7%94%A8cin"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.3.1    使用cin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-%E4%BD%BF%E7%94%A8cout%E8%BF%9B%E8%A1%8C%E6%8B%BC%E6%8E%A5"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.3.2    使用cout进行拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-4-%E7%B1%BB%E7%AE%80%E4%BB%8B"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.3.4    类简介</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

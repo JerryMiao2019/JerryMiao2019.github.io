@@ -103,7 +103,7 @@
     <updated>2022-02-27T14:01:02.826Z</updated>
     
     
-    <summary type="html">&lt;p&gt;此文章就记录一下我在文章中添加音乐的艰辛历程&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;此文章就记录一下我在文章中添加音乐的艰辛历程&lt;br&gt;</summary>
     
     
     
@@ -120,12 +120,10 @@
     <updated>2021-10-05T09:58:02.730Z</updated>
     
     
-    <summary type="html">&lt;h1&gt;第二章：进入 C++&lt;/h1&gt;
-&lt;h2 id=&quot;内容包括：&quot;&gt;内容包括：&lt;/h2&gt;
-&lt;ul&gt;
+    <summary type="html">&lt;h1 id=&quot;第二章：进入-C&quot;&gt;&lt;a href=&quot;#第二章：进入-C&quot; class=&quot;headerlink&quot; title=&quot;第二章：进入 C++&quot;&gt;&lt;/a&gt;第二章：进入 C++&lt;/h1&gt;&lt;h2 id=&quot;内容包括：&quot;&gt;&lt;a href=&quot;#内容包括：&quot; class=&quot;headerlink&quot; title=&quot;内容包括：&quot;&gt;&lt;/a&gt;内容包括：&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;C++ 程序的一般格式；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;#include &lt;/code&gt;  指令；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;main() &lt;/code&gt;  函数；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#include&lt;/code&gt;  指令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main()&lt;/code&gt;  函数；&lt;/li&gt;
 &lt;li&gt;使用&lt;code&gt;cout&lt;/code&gt;对象进行输出；&lt;/li&gt;
 &lt;li&gt;在C++程序中加入注释；&lt;/li&gt;
 &lt;li&gt;何时以及如何使用&lt;code&gt;endl&lt;/code&gt;；&lt;/li&gt;
@@ -151,8 +149,7 @@
     <updated>2021-10-05T09:58:12.552Z</updated>
     
     
-    <summary type="html">&lt;h1&gt;开始学习C++&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;开始学习C&quot;&gt;&lt;a href=&quot;#开始学习C&quot; class=&quot;headerlink&quot; title=&quot;开始学习C++&quot;&gt;&lt;/a&gt;开始学习C++&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;编辑器为 JetBrains 赞助的 CLion&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
@@ -195,8 +192,8 @@
     <updated>2021-10-05T09:57:49.515Z</updated>
     
     
-    <summary type="html">&lt;p&gt;​	刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。&lt;/p&gt;
-&lt;p&gt;​	一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;​    刚上完体育课，我的同桌便说:累哦！ 说完他变成了光。 &lt;/p&gt;
+&lt;p&gt;​    一天，我问的新同桌:第几节课了？ 同桌没太听清:节课……？杰克!!! 说完他变成了光。 &lt;/p&gt;</summary>
     
     
     

@@ -21,12 +21,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="开始学习C++ 注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的 编辑器为 JetBrains 赞助的 CLion">
+  <meta name="description" content="开始学习C++注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的 编辑器为 JetBrains 赞助的 CLion">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一章：开始学习C++">
 <meta property="og:url" content="http://example.com/2021/09/25/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CPP/index.html">
 <meta property="og:site_name" content="JerryMiao2019 的个人 Blog">
-<meta property="og:description" content="开始学习C++ 注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的 编辑器为 JetBrains 赞助的 CLion">
+<meta property="og:description" content="开始学习C++注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的 编辑器为 JetBrains 赞助的 CLion">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-09-25T13:51:00.000Z">
 <meta property="article:modified_time" content="2021-10-05T09:58:12.552Z">
@@ -278,21 +278,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1>开始学习C++</h1>
-<p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
+        <h1 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h1><p><strong>注意，本教程的所有示例都是基于运行 64 位系统 Windows 10 系统 编写的</strong></p>
 <p><strong>编辑器为 JetBrains 赞助的 CLion</strong></p>
 <span id="more"></span>
-<h3 id="1）进入C">1）进入C++</h3>
-<p>​	这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
+<h3 id="1）进入C"><a href="#1）进入C" class="headerlink" title="1）进入C++"></a>1）进入C++</h3><p>​    这是一个显示消息的C++程序，使用C++工具<code>cout</code>生成字符输出。</p>
 <p>你会看到一些<code>//</code>打头的文字，不必担心，这并不是一些高深的语法，这只是注释而已，编译器将自动跳过，就像<code>Python</code>中的<code>#</code>。</p>
 <p><strong>C++对大小写敏感，所以，并不能将 <code>cout</code> 写成<code>Cout</code> 或 <code>COUT</code>，程序将无法通过编译，</strong></p>
 <p><strong>并且会指出使用了未知的标识符，所像<code>kout</code>和<code>cont</code>都是不可取的。</strong></p>
 <p>文件扩展名<code>cpp</code>是一种常用的扩展名，可能会使用其他扩展参见附录一。</p>
-<h5 id="例1-1：">例1.1：</h5>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; myfirst.cpp -- display a message</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;                                 &#x2F;&#x2F; a PREPROCESSOR directive</span><br><span class="line">int main()                                          &#x2F;&#x2F; function header</span><br><span class="line">&#123;                                                   &#x2F;&#x2F; start of function body</span><br><span class="line">    using namespace std;                            &#x2F;&#x2F; make definitions visible</span><br><span class="line">    cout &lt;&lt; &quot;Hello World Guys!&quot;;                    &#x2F;&#x2F; message</span><br><span class="line">    cout &lt;&lt; endl;                                   &#x2F;&#x2F; start a new line.</span><br><span class="line">    cout &lt;&lt; &quot;This is my first program!&quot; &lt;&lt; endl;    &#x2F;&#x2F; more output</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>​</p>
-<h3 id="附录：">附录：</h3>
-<h4 id="1）">1）</h4>
+<h5 id="例1-1："><a href="#例1-1：" class="headerlink" title="例1.1："></a>例1.1：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; myfirst.cpp -- display a message</span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;                                 &#x2F;&#x2F; a PREPROCESSOR directive</span><br><span class="line">int main()                                          &#x2F;&#x2F; function header</span><br><span class="line">&#123;                                                   &#x2F;&#x2F; start of function body</span><br><span class="line">    using namespace std;                            &#x2F;&#x2F; make definitions visible</span><br><span class="line">    cout &lt;&lt; &quot;Hello World Guys!&quot;;                    &#x2F;&#x2F; message</span><br><span class="line">    cout &lt;&lt; endl;                                   &#x2F;&#x2F; start a new line.</span><br><span class="line">    cout &lt;&lt; &quot;This is my first program!&quot; &lt;&lt; endl;    &#x2F;&#x2F; more output</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​    </p>
+<h3 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h3><h4 id="1）"><a href="#1）" class="headerlink" title="1）"></a>1）</h4><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -331,6 +327,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 
     </div>
 
@@ -447,7 +444,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">开始学习C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%BC%89%E8%BF%9B%E5%85%A5C"><span class="nav-number">1.0.1.</span> <span class="nav-text">1）进入C++</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%8B1-1%EF%BC%9A"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">例1.1：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%84%E5%BD%95%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">附录：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">1）</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C"><span class="nav-number">1.</span> <span class="nav-text">开始学习C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%BC%89%E8%BF%9B%E5%85%A5C"><span class="nav-number">1.0.1.</span> <span class="nav-text">1）进入C++</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%8B1-1%EF%BC%9A"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">例1.1：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%84%E5%BD%95%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">附录：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">1）</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
